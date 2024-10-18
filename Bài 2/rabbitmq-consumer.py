@@ -8,7 +8,7 @@ channel = connection.channel()
 queue_name = 'sensor_data'
 channel.queue_declare(queue=queue_name)
 
-def callback(body):
+def callback(ch, method, properties, body):
     data = json.loads(body)
     timestamp = datetime.fromtimestamp(data['timestamp'])
     print("Received data:")
