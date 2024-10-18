@@ -39,8 +39,8 @@ def get_data_from_thingspeak():
         print(f"Failed to fetch data, status code: {response.status_code}")
 
 #Chạy cách 1:
-#send_data_urlencoded(20, 33)
+send_data_urlencoded(20, 33)
 #Chạy cách 2:
-send_data_json(21, 34)
+#send_data_json(21, 34)
 #Lấy dữ liệu từ Thingspeak:
 get_data_from_thingspeak()
